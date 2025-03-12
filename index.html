@@ -1,48 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Project</title>
+    <title>Beautiful Website</title>
     <style>
-      /* Base styling for the page */
-      body {
+      /* Reset some default styles */
+      * {
+        box-sizing: border-box;
+      }
+      html, body {
         margin: 0;
         padding: 0;
-        background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+        width: 100%;
+        height: 100%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      /* Full-page gradient background */
+      body {
+        background: linear-gradient(135deg, #f6d365, #fda085);
         display: flex;
-        align-items: center;
         justify-content: center;
-        height: 100vh;
+        align-items: center;
+      }
+      /* Centered container for content */
+      .container {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 15px;
+        text-align: center;
+        max-width: 500px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      }
+      h1 {
+        margin-bottom: 20px;
+        font-size: 3rem;
         color: #333;
       }
-      /* Container to center content */
-      .container {
-        text-align: center;
-        background: rgba(255, 255, 255, 0.85);
-        padding: 2rem 3rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
-      /* Styling for header */
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-        color: #2e8b57;
-      }
-      /* Styling for paragraph */
       p {
-        font-size: 1.5rem;
-        margin-top: 0;
-        line-height: 1.6;
+        font-size: 1.2rem;
+        color: #555;
+        line-height: 1.5;
+      }
+      a.button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 12px 24px;
+        background: #ff7e67;
+        color: #fff;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+      }
+      a.button:hover {
+        background: #ff6a54;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Hello, world!</h1>
-      <p>This is my simple webpage that updates automatically.</p>
+      <h1>Welcome to My Beautiful Website</h1>
+      <p>Experience a simple yet elegant design that brings your ideas to life. Explore, learn, and enjoy the journey.</p>
+      <a href="#" class="button">Discover More</a>
     </div>
   </body>
 </html>
